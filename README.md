@@ -96,6 +96,8 @@ Two clusters were determined as ideal through elbow plot, silhouette vs. k figur
 - **K-Means:** `n_clusters = 2`  
 - **Agglomerative Clustering:** `linkage = ward`, `metric = euclidean`, `n_clusters = 2`
 
+![LDA Classification Report](Images/Hierarchical_Silhouette_Score_vs_K.png)
+
 # Performance Summaries & Key Insights
 
 ## Classification
@@ -104,6 +106,8 @@ The following shows the report from the KNN and LDA classification models:
 ![KNN Classification Report](Images/KNN_Report.png)  ![LDA Classification Report](Images/LDA_Report.png)
 
 KNN performed better than LDA, likely because KNN looks for the closest datapoints to make a prediction. Homes in the same region of the city have similar features.
+
+![LDA Classification Report](Images/KNN_Confusion_Matrix.png)
 
 ## Regression
 
@@ -116,7 +120,11 @@ KNN performed better than LDA, likely because KNN looks for the closest datapoin
 
 LASSO had a slightly higher R² and used fewer features than Elastic Net.
 
+![LDA Classification Report](Images/LASSO_Residuals.png)
+
 ## Clustering
+
+The Agglomerative model placed more homes in the standard cluster than K-Means and had a higher silhouette score.
 
 | Clusters                 | K-Means | Agglomerative |
 |---------------------------|---------|---------------|
@@ -128,8 +136,7 @@ LASSO had a slightly higher R² and used fewer features than Elastic Net.
 | Silhouette                | 0.54    | 0.55          |
 | Inertia                   | 6202.61 | n/a           |
 
-The Agglomerative model placed more homes in the standard cluster than K-Means and had a higher silhouette score.
-
+![LDA Classification Report](Images/Agglomerative_Clusters.png)
 
 # Data Availability
 The dataset used in this project was provided by the course instructor and **cannot be publicly shared**.
