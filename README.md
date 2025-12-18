@@ -101,6 +101,8 @@ Two clusters were determined as ideal through elbow plot, silhouette vs. k figur
 ## Classification
 The following shows the report from the KNN and LDA classification models:  
 
+![KNN Classification Report](Images/KNN_Report.png)  ![LDA Classification Report](Images/LDA_Report.png)
+
 KNN performed better than LDA, likely because KNN looks for the closest datapoints to make a prediction. Homes in the same region of the city have similar features.
 
 ## Regression
